@@ -1,5 +1,7 @@
 package com.company;
 
+import java.awt.*;
+
 /**
  * This class contains class (static) methods
  * that will help you test the Picture class 
@@ -8,8 +10,13 @@ package com.company;
  * 
  * @author Barbara Ericson 
  */
+
+
+
 public class PictureTester
 {
+
+
   /** Method to test zeroBlue */
   public static void testZeroBlue()
   {
@@ -60,7 +67,9 @@ public class PictureTester
     // uncomment a call here to run a test
     // and comment out the ones you don't want
     // to run
-    testZeroBlue();
+    //testZeroBlue();
+    Picture p = new Picture("beach.jpg");
+    p.pixelNegation();
     //testKeepOnlyBlue();
     //testKeepOnlyRed();
     //testKeepOnlyGreen();

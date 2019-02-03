@@ -12,7 +12,57 @@ public class IntArrayWorker
   {
     matrix = theMatrix;
   }
-  
+  //GETCOUNT
+  public int getCount(int a){
+    int count = 0;
+
+    for(int r = 0; r < matrix.length; r++){
+
+      for(int c = 0; c < matrix[0].length; c++){
+        if(matrix[r][c] == a){
+          count++;
+        }
+
+      }
+
+    }
+
+    return count;
+  }
+  //GETCOUNT
+
+
+  //GETLARGEST
+  public int getLargeest(){
+    int largestValue = 0;
+
+    for(int r = 0; r < matrix.length; r++){
+
+      for(int c = 0; c < matrix[0].length; c++){
+        if(matrix[r][c] > largestValue){
+          largestValue = matrix[r][c];
+        }
+
+      }
+
+    }
+
+    return largestValue;
+  }
+  //GETLARGEST
+
+
+  //GETCOLTOTAL
+  public int getColTotal(int b){
+    int tot = 0;
+
+    for(int r = 0; r < matrix.length; r++){
+      tot += matrix[r][b];
+    }
+
+    return tot;
+  }
+  //GETCOLTOTAL
   /**
    * Method to return the total 
    * @return the total of the values in the array
